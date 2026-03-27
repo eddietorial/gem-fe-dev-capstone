@@ -1,0 +1,110 @@
+/* Footer.css */
+
+.footer {
+  background-color: var(--color-primary-green);
+  color: var(--color-highlight-light);
+  padding-top: var(--space-2xl);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+/* Brand */
+.footer-brand-name {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary-yellow);
+}
+
+.footer-brand-tagline {
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: var(--space-md);
+}
+
+.footer-bio {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  max-width: 340px;
+}
+
+/* Nav / Contact shared */
+.footer-heading {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary-yellow);
+  margin-bottom: var(--space-md);
+}
+
+.footer-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.footer-nav a,
+.footer-contact a {
+  color: var(--color-highlight-light);
+  opacity: 0.85;
+  font-size: 0.95rem;
+  transition: opacity var(--transition);
+}
+
+.footer-nav a:hover,
+.footer-contact a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Contact */
+.footer-contact {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.footer-hours {
+  margin-top: var(--space-sm);
+  font-size: 0.875rem;
+  line-height: 1.8;
+  opacity: 0.75;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  padding: var(--space-md);
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
