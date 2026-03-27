@@ -1,4 +1,4 @@
-# Little Lemon Restaurant — Front-End Capstone
+# Little Lemon Restaurant:Front-End Capstone
 
 **Built by Geoffrey Edmund Moraes [eddietorial](https://github.com/eddietorial)**  
 Meta Front-End Developer Professional Certificate · Coursera Capstone
@@ -10,7 +10,7 @@ Meta Front-End Developer Professional Certificate · Coursera Capstone
 A responsive, accessible single-page web application for the fictitious
 **Little Lemon Mediterranean Restaurant** in Chicago. The app lets users
 browse weekly specials, read customer reviews, learn about the restaurant's
-story, and — most importantly — **reserve a table online**.
+story, and most importantly, **reserve a table online**.
 
 This project is original work submitted as the graded capstone assignment.
 While it follows the Meta UX design brief for "Little Lemon", every line of
