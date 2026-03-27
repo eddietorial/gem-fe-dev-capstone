@@ -26,7 +26,7 @@ code, CSS decision, and copy reflects personal authorship.
 | **Booking Form** | Full client-side validation, accessible error messages |
 | **Confirmation Page** | Booking summary with graceful fallback |
 | **Responsive** | Mobile-first, tested down to 320 px wide |
-| **Accessible** | WCAG 2.1 AA compliant — skip link, ARIA labels, focus management |
+| **Accessible** | WCAG 2.1 AA compliant - skip link, ARIA labels, focus management |
 | **Unit Tests** | 40+ tests across utilities, components and pages |
 
 ---
@@ -47,7 +47,7 @@ code, CSS decision, and copy reflects personal authorship.
 
 ### Prerequisites
 
-- **Node.js** ≥ 16.x — [download](https://nodejs.org)
+- **Node.js** ≥ 16.x - [download](https://nodejs.org)
 - **npm** ≥ 7.x (bundled with Node.js)
 
 ### Clone & Install
