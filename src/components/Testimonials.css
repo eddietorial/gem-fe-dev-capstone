@@ -1,0 +1,86 @@
+/* Testimonials.css */
+
+.testimonials {
+  background-color: var(--color-highlight-light);
+}
+
+.testimonials h2 {
+  font-family: var(--font-display);
+  color: var(--color-highlight-dark);
+  margin-bottom: var(--space-xl);
+}
+
+/* Grid: 2×2 on desktop */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+/* Card */
+.testimonial-card {
+  background-color: #fff;
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+/* Header row */
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.testimonial-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-primary-green);
+  color: var(--color-primary-yellow);
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-highlight-dark);
+}
+
+.testimonial-date {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Stars */
+.testimonial-stars {
+  font-size: 1.1rem;
+  color: var(--color-primary-yellow);
+  letter-spacing: 2px;
+}
+
+/* Quote */
+.testimonial-text {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+  border-left: 3px solid var(--color-primary-yellow);
+  padding-left: var(--space-md);
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
