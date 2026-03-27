@@ -1,0 +1,19 @@
+/* App.css – Layout-level styles */
+
+/* Skip-to-content accessibility link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-md);
+  background: var(--color-primary-yellow);
+  color: var(--color-highlight-dark);
+  padding: 10px 20px;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  font-weight: 700;
+  z-index: 9999;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
