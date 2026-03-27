@@ -1,0 +1,122 @@
+/* BookingPage.css */
+
+.booking-page {
+  background-color: var(--color-highlight-light);
+  min-height: calc(100vh - 72px);
+}
+
+.booking-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+/* Form panel */
+.booking-form-panel {
+  background-color: #fff;
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-card);
+}
+
+.booking-title {
+  font-family: var(--font-display);
+  color: var(--color-primary-green);
+  margin-bottom: var(--space-xs);
+}
+
+.booking-subtitle {
+  color: #555;
+  margin-bottom: var(--space-xl);
+  font-size: 1rem;
+}
+
+/* Info panel */
+.booking-info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  position: sticky;
+  top: 88px; /* below nav */
+}
+
+.booking-info-card,
+.booking-hours {
+  background-color: var(--color-primary-green);
+  color: var(--color-highlight-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+
+.booking-info-card h2,
+.booking-hours h2 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--color-primary-yellow);
+  margin-bottom: var(--space-md);
+}
+
+/* Info list */
+.booking-info-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.booking-info-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.info-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.booking-info-card a {
+  color: var(--color-primary-yellow);
+  text-decoration: underline;
+}
+
+/* Hours */
+.booking-hours dl {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.booking-hours dl > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.booking-hours dt {
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.booking-hours dd {
+  opacity: 0.9;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .booking-layout {
+    grid-template-columns: 1fr;
+  }
+  .booking-info-panel {
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-form-panel {
+    padding: var(--space-lg);
+  }
+}
