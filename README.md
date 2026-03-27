@@ -1,4 +1,4 @@
-# Little Lemon Restaurant:Front-End Capstone
+# Little Lemon Restaurant: Front-End Capstone
 
 **Built by Geoffrey Edmund Moraes [eddietorial](https://github.com/eddietorial)**  
 Meta Front-End Developer Professional Certificate · Coursera Capstone
