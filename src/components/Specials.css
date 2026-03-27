@@ -1,0 +1,130 @@
+/* Specials.css */
+
+.specials {
+  background-color: #fff;
+}
+
+/* Header row with title + CTA */
+.specials-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-xl);
+  gap: var(--space-md);
+}
+
+.specials-header h2 {
+  font-family: var(--font-display);
+  color: var(--color-highlight-dark);
+}
+
+/* Card grid: 3 columns on desktop */
+.specials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+/* Individual card */
+.special-card {
+  background-color: var(--color-highlight-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.special-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Card image */
+.special-card-img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.special-card:hover .special-card-img {
+  transform: scale(1.04);
+}
+
+/* Card body */
+.special-card-body {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  flex: 1;
+}
+
+/* Title + price row */
+.special-card-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.special-card-name {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-highlight-dark);
+}
+
+.special-card-price {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-secondary-salmon);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Description */
+.special-card-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+  flex: 1;
+}
+
+/* Order link */
+.special-card-order {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-highlight-dark);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: var(--space-xs);
+  transition: color var(--transition), gap var(--transition);
+}
+
+.special-card-order:hover {
+  color: var(--color-primary-green);
+  gap: 8px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .specials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .specials-grid {
+    grid-template-columns: 1fr;
+  }
+  .specials-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
